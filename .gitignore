@@ -20,8 +20,6 @@
 /node_modules
 /yarn-error.log
 
-Gemfile.lock
-yarn.lock
 vendor/
 
 /public/assets
@@ -29,7 +27,6 @@ vendor/
 .byebug_history
 /public/packs
 /public/packs-test
-/node_modules
 yarn-debug.log*
 yarn-error.log*
 .yarn-integrity
@@ -38,12 +35,9 @@ yarn-error.log*
 .DS_Store
 .babelrc
 .postcssrc.yml
-/public/packs
-/public/packs-test
-/node_modules
-yarn-debug.log*
-.yarn-integrity
 
 config/mail_properties.yml
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+.idea
