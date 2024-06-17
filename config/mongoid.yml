@@ -3,7 +3,7 @@ development:
   clients:
     # Defines the default client. (required)
     default:
-      uri: 'mongodb://0.0.0.0:27017/bioruby_polymarker_development'
+      uri: 'mongodb://0.0.0.0:27017/bioruby_polymarker'
       options:
     
         # Change the default write concern. (default = { w: 1 })
@@ -142,11 +142,21 @@ development:
     # app_name: MyApplicationName
 
 test:
-    clients:
-    # Defines the default client. (required)
-        default:
-            uri: 'mongodb://0.0.0.0:27017/bioruby_polymarker_test'
-    options:
+  clients:
+    default:
+      database: bioruby_polymarker_test
+      hosts:
+        - 127.0.0.0.1
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
+production:
+  clients:
+    default:
+      uri: 'mongodb://0.0.0.0:27017/bioruby_polymarker'
+      options:
+        max_pool_size: 5 
         raise_not_found_error: false
         log_level: :debug
 
