@@ -71,8 +71,8 @@ ExecStart=/bin/bash -lc 'exec /home/polymarker/.rbenv/shims/bundle exec sidekiq'
 # Uncomment this if you are going to use this as a system service
 # if using as a user service then leave commented out, or you will get an error trying to start the service
 # !!! Change this to your deploy user account if you are using this as a system service !!!
-User=pm
-Group=pm
+User=polymarker
+Group=polymarker
 UMask=0002
 
 # Greatly reduce Ruby memory fragmentation and heap usage

@@ -1,0 +1,7 @@
+mail_opt:
+  email_server: xxxxxxx.ac.uk
+  email_domain: xxxxxxx.ac.uk
+  email_from: xxxxxx@xxxxxx.ac.uk
+  email_user: xxxxxxxxx
+  email_from_alias: xxxxxxxxxx
+  email_pwd: xxxxxxxx

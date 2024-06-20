@@ -1,0 +1,281 @@
+- name: Glycine max var. Williams 82 
+  path: /opt/data/References/Gm/Glycine_max.Glycine_max_v2.1.dna_rm.toplevel.fa
+  genome_count: 1
+  arm_selection: scaffold
+  description: >
+    Glycine max var. Williams 82 was sequenced, assembled, and annotated by the U.S. DOE Joint Genome Institute (JGI-PGF) 
+    in collaboration with a consortium of research labs and published. Current assembly is version v2.1 and comprises a total 978 Mb
+    The reference sequence is available in [Ensembl plants Relase 50](ftp://ftp.ensemblgenomes.org/pub/plants/release-50/fasta/glycine_max/dna/). 
+    The version of the assembly used has the repeats masked (Glycine_max.Glycine_max_v2.1.dna_rm.toplevel.fa). 
+  example: >
+    Test_marker_1,1,GAGGAGCTCGTGACGCTAGTGTCGGAGATTATCAGCGCCGGCACGGACACAAGCGCCACC[G/T]CGCTGGAGTGGGCGCTGCTTCATTTGGTTATGGATCAAGAGATTCAAGAGAGGCTGTAC
+    Test_marker_2,2,ATCTGCAATCCACTGAGTTTGTATATCTTGGATGCGGACCAAATGGCCAATTCTTCAATA[T/A]CGAGTCCCTATTGAAGTTCATTCTGTGTAGTTTCTTCTTTTTGTTTACCACTTCTCTGC
+    Test_marker_3,18,TCACCCTAGAATTTAGGATTTGTGAAAAAATTGCTCTACATTTGTCAAGGATAACATGCA[C/A]GTTAGCTACACCATTTGCAACATGATTAAAAGCCTCTACCACAGTCTGTCAGTCACTTT
+    Test_marker_4,KZ848236,AATTTATCTCTGCCTTGGGTTGTTCAATATTACTTCCACTTCAACAAACCAATCAGTTAT[C/T]TTCCTGCCAGTGTAGGAATAGTGAGTTTCAATCTAATTTTTGCATTTGCGGCTTCTATGG
+
+- name: Hordeum vulgare (barley)
+  path: /opt/data/References/Hv/Hordeum_vulgare.IBSC_v2.dna.toplevel.fa
+  genome_count: 1
+  arm_selection: scaffold
+  description: >
+    The barley genome assembly presented here was produced by the 
+    [International Barley Genome Sequencing Consortium (IBSC)](http://barleygenome.org/) using a 
+    [hierarchical approach](http://europepmc.org/abstract/MED/28447635). Initially multiplexed 
+    short read BAC by BAC contig assemblies (N50: 79 kb) were scaffolded using physical, genetic 
+    and optical maps (N50: 1.9 Mb) and were assigned to chromosomes using a POPSEQ genetic map. 
+    Finally, the linear order and orientation of scaffold sequences was determined using 
+    [chromosome-conformation capture sequencing (Hi-C)](http://wikipedia.org/wiki/Chromosome_conformation_capture).
+
+    The final chromosome-scale assembly consisted of 6,347 ordered super-scaffolds composed of 
+    merged assemblies of individual BACs, representing 4.79 Gb (~95%) of the genomic sequence content, 
+    of which 4.54 Gb have beenassigned to precise chromosomal locations in the Hi-C map.
+
+    The chloroplast genome component and its gene annotation are also present ([KC912687](http://www.ebi.ac.uk/ena/data/view/JQ754651)).
+
+    The assembly and description where downloaded from [ensembl!](http://plants.ensembl.org)
+
+  example: >
+    vcZ2GHW2,chr7H,ATTGCATGATGATACGACTCCCAGATACTCGTGATCTGCGTTGGGTTTTCCATGAAGAGGAACCGCTTATCACAGAACAAAGTGGGTAAGTATTTCTCTC[A/G]GCTATGAAACTAAGGTTTATCGAATCAATAGGAATATCAACCACAATCGTCTTTAGCGGTTGCACACAAAAGAACAAACAACTTGCACACAACACGGGCA
+    vcZ2W9KA,chr5H,TTCTCCCACCTCATCGTTTAACTTCACACTGATGGTTCCACCTACCAAAATTCTCCGAATCCAATCTATCCATCGGGTGTCAAAGTTTCTTTTGCTATGA[G/T]AATCCAACAGGAATTCCCAGTTAACCTTATCATATGCTTTTTCGAAGTCAAGTTTGAGCACAATCCCTGTTTTCTTACGAACATACGTATGATGCAAAAT
+    vcZ284M0,chr4H,GCTTGAAGTCATTACACATACGGAGTGATTTGTTCTTCTTTGGCACCATCATGAAGTTGGCGAGGCACTCACAGTGGTAGACCTCGCGGATAAACTTGGC[C/T]GCTAGGAGTCGAGCGATCTCCTCGCCAATCTCCTTGCGCTTCTCAGTGGATGATCAACACAAATGCTCCCTAACGGGCTTGACTTTTAGTTCAACTCGGA
+    vcZ7H5CF,chr2H,TGTAAAGTGTGTGTGTGTGTATTTTGAGTGCTTTCTCTACGAATGAGAGGTGGTGGATGGGTATATATAGGCATCTCCTAAATCAAACCGTTACCACATT[C/T]TCACCCAACTCGGTGAAACTGAAGTAAATCTCAATGGCACCGATTTGCACAAAATGTGGCAAATTTGAAATTATTGATGAGACCGATATAGAAATTTTGG
+
+- name: Tetraploid wheat, based on Chinese Spring RefSeq v1.0
+  path: /opt/data/References/Tetraploid/161010_Chinese_Spring_v1.0_pseudomolecules_tetraploid.fasta
+  genome_count: 2
+  arm_selection: nrgene
+  description: >
+    Tetraploid reference produced by substracting the D genome from the hexaploid wheat. 
+    A whole genome assembly has been carried out by the IWGSC in collaboration with the company NRGene. 
+    Using a proprietary algorithm DeNovoMAGIC with Illumina sequencing data a 14.5 Gb assembly was produced. 
+    Sequences have been ordered using POPSEQ data and Hi-C (chromosome conformation capture) to generate 21 pseudomolecules 
+    representing the majority of the wheat genome. 
+    Reference sequence available in [URGI](https://wheat-urgi.versailles.inra.fr/Seq-Repository/Assemblies)
+    The assembly is described in [IWGSC (2018)](https://doi.org/10.1126/science.aar7191).
+  example: >
+    Kronos4607.chr2A.256748,2A,agaagcttattatgcatatgtggaattcatttattcggaaacaaaggtatgcgtgcaaaatcaagtgttttacggacggtactcgctgaaccctacatgc[C/T]tcgtgtcttgctgaaagagtatgataattcattcacagggtgctagctgatgggcatataccttgggcctgtgagggcttctcccggcttcatggaccgc
+    Kronos3485.chr3A.750506662,3A,gcttgtttcatgaaaatcatgtttactagagcttagtaattaatagtcttaacatgttaaatagccatcgatgacccaattactggtgtcagaggaccaa[G/A]atgccataatttcttacaaacaagttgtgatgcttcattagttaccactataccaactaagattccttaggagtttgaccatcaaactgtagttttacgg
+    Kronos3658.chr4A.82557,4A,gacggtgaacttgacctcgggcgcctcggcaacggtggcggcgtaggccttcttgacggcggactcgagggcagggacgaacttgtagcccgcgtatgcg[C/T]cgccagtggtctccttgatggccttgtcgaaggcggactcgaagacggtgaacttgtcgttgacgggggcagcgtcggcggcggtggcggcaatcctgaa
+    Kronos2065.chr6B.21130,6B,atatgctcaaacatgggtccggtatgctagcccaaagtaatatttttaagcaaatgctgacctcctattgcacgttccagttgctgggcaaacacggttc[C/T]atagtcgcgcttatcataccggaagtagggtgcagccgccttctttgagatcagcccagccagtatgcctacaaacccttccttcctttcctcaggagct
+
+- name: Brassica napus cv Darmor-bzh v4.1 
+  path: /opt/data/References/Bn/Brassica_napus_v4.1.chromosomes.fa
+  genome_count: 1
+  arm_selection: _,0
+  description: >
+    The assembly was produced with a misture of Sanger BAC libraries, GS FLX Titanium (450bp) and Illumina HiSeq (100bp) and assembled with SOAP. 
+    The scaffolds where assigned to their corresponding genome by comparing the diploid progenitors and the scaffolds where anchored with the aid of genetic maps.  
+    Reference sequence available in [genoscope](http://www.genoscope.cns.fr/brassicanapus/data/).
+    The assembly is described in [Chalhoub, B. et al (2014)](https://doi.org/10.1126/science.1253435)
+  example: >
+    b_napus_test1,chrC04,AGAATCACAGAACAAGCTGGTGTTGTCCTAACACTTGATCCCAAACCGATTGAGGGTGACT[G/C]GAACGGTGCTGGTTGCCATACCAATTACAGCACAAAGAGCATGAGAGAGGACGGAGGA
+    b_napus_test2,chrA08,CAAAGACGCTCCAATCCACGACACTTCCGGTGTTGTTTCCATCTCTGACGATGGAAACCTC[G/C]TGGTTACCGATGGTCGAAACCGTCTTATATGGTCGACGAACGTCACGGTACCAGTGGC
+    b_napus_test3,chrC08,CGCCGGAAAACAAACCCTGCTCCCGGCCACGGCCTCGCCTTCATCGTGGTCCCTACCATT[A/T]ACAACGACGGCGCCGCCGGAAAAGGCTTCATCGGTCTGTTAAACCAAACCAATAAGGGA
+    b_napus_test4,chrA01,GTTCCTTTCTCTCCATAGATAGTAGATAACTCCTTTCCAGCATAGAAGAATCAAACGCTT[G/C]AAGAGCCTATTTCCACGAAGGGATATCATCTGATTCATCGTTTCCTCCCAGACCGGTGA
+
+- name: Brassica oleracea kale-like type TO1000DH 
+  path: /opt/data/References/Bo/Brassica_oleracea.BOL.dna_sm.toplevel.fa
+  genome_count: 1
+  arm_selection: scaffold
+  description: >
+    The genomic sequence within this version of Ensembl includes 33,459 scaffolds (>200 bp) with an N50 of 850 kb that was assembled 
+    at NRC-Saskatoon using a hybrid approach from Illumina, Roche 454 and Sanger sequence data. 
+    The assembly has been orientated and assigned to the nine pseudochromosomes using dense genotype-by-sequencing genetic maps.
+    Reference sequence available in [ensembl!](http://plants.ensembl.org/Brassica_oleracea/Info/Index)[fasta](ftp://ftp.ensemblgenomes.org/pub/plants/release-41/fasta/brassica_oleracea/dna/).
+    The assembly is described in [Parkin, I. et al (2014)](https://doi.org/10.1186/gb-2014-15-6-r77)
+  example: >
+    b_oleracea_test1,C4,AGAATCACAGAACAAGCTGGTGTTGTCCTAACACTTGATCCCAAACCGATTGAGGGTGACT[G/C]GAACGGTGCTGGTTGCCATACCAATTACAGCACAAAGAGCATGAGAGAGGACGGAGGA
+    b_oleracea_test2,C8,CGCCGGAAAACAAACCCTGCTCCCGGCCACGGCCTCGCCTTCATCGTGGTCCCTACCATT[A/T]ACAACGACGGCGCCGCCGGAAAAGGCTTCATCGGTCTGTTAAACCAAACCAATAAGGGA
+    b_oleracea_test3,C9,ATGGCACCACGAGGCCTTTTTTATATTTCTTATACAAACAGTAGTTCATTTAAG[A/G]TTTAGTTTTCTTCTATAAACTAGTTTATCCGATACAAAAACTGACAACTTTCAGCCTGTGTTGTT
+    b_oleracea_test4,Scaffold01088,ATCATGTTCAGGTTCTGTAGTCAACATGAGGAAAAATGGCTTCCCTCCCAACATTC[T/G]CAGATGCTTTTGTCATGTTCATTCAACTAAGACTATGAACATGGTGGCAAAAATTCAACATCC
+
+- name: Brassica rapa ssp. pekinensis line Chiifu 401-42 
+  path: /opt/data/References/Br/Brassica_rapa.Brapa_1.0.dna_sm.toplevel.fa
+  genome_count: 1
+  arm_selection: scaffold
+  description: >
+    The genomic sequence within this version of Ensembl includes 193 large scaffolds assembled by CAAS-IVF, 
+    which have been orientated and assigned to pseudochromosomes using publicly available genetic markers.
+    Reference sequence available in [ensembl!](http://plants.ensembl.org/Brassica_rapa/Info/Index)[fasta](ftp://ftp.ensemblgenomes.org/pub/plants/release-41/fasta/brassica_rapa/dna/).
+    The assembly is described in [The Brassica rapa Genome Sequencing Project Consortium  (2011)](https://www.nature.com/articles/ng.919)
+  example: >
+    b_rapa_test1,A08,CAAAGACGCTCCAATCCACGACACTTCCGGTGTTGTTTCCATCTCTGACGATGGAAACCTC[G/C]TGGTTACCGATGGTCGAAACCGTCTTATATGGTCGACGAACGTCACGGTACCAGTGGC
+    b_rapa_test2,A01,GTTCCTTTCTCTCCATAGATAGTAGATAACTCCTTTCCAGCATAGAAGAATCAAACGCTT[G/C]AAGAGCCTATTTCCACGAAGGGATATCATCTGATTCATCGTTTCCTCCCAGACCGGTGA
+    b_rapa_test3,A10,CTCCTTGGAATTTTCAATATTGGCCAGTTGTAAATATGCCAAAATCAGGTCCACCAAGT[T/A]CCCTAAAATTGTAAACTATTGCGCCGGAGAAGAATGTGGATTTGGAGTTTATGTAACTCT
+    b_rapa_test4,Scaffold000096,TTTCCGAGACCTGAAACTGAAAGTCACTTTCTGAATTTCGTAAACCCTAGCTTTCCAATC[T/G]CCGACGCTCTCCATCTTCTCTTGCCGCCGCCAATTCATCCTCCCGACGAGCTCAGCTTT
+
+- name: Rye (Secale cereale L.) inbred line Lo7 v2
+  path: /opt/data/References/Rye/Secale_cereale_Lo7_v2_Sc.dna.genome.fa
+  genome_count: 1
+  arm_selection: first_two
+  description: >
+    The scaffolds  were constructed using the Whole Genome Shotgun (WGS) assembly of Lo7. 
+    To link WGS contigs the scaffolding software SSPACE (version 2.3) was used. 
+    The assmebly contains 1.29 million scaffolds with a cumulative length of 2.8 Gbp.
+    Reference sequence available from [IPK](https://doi.org/10.5447/IPK/2016/56).
+    The assembly is described in [Bauer, E. et al (2014)](https://doi.org/10.1111/tpj.13436)
+  example: >
+    rye_test1,Lo,ATGGCTGCAAGATGAATGTTCCCCAAACCCCATATGCTGTAACAGCTGAATTGCACGTAC[A/T]GTCTATATCAGGGTCAGCTCCTGGCCCTAGAGAATCCTGAATTGCAACAGCACATTGGT
+    rye_test2,Lo,CCTTCTCCAGTATGCCTCGGGCCTCCTTTTATAGGTCAAAGGGGTCGCCACAGTGGCATA[C/G]AGGAGGTGAAAAGTATCTACAGTGTTTGAGTTTATCCTCTGACATCATAGGACAAACGC
+    rye_test3,Lo,TTCGTCACTATCGGCAAGTTTACAAAGTGGCCTGAGGTAGAGCCAGTGAAAAACGTGACC[G/A]CGCAATCAGCTATCAAGTTCTTCAAGGGACTGGTCTGTCATTTCGGAGTACCCAAAGGG
+    rye_test4,Lo,GCTCCTCCTCAGCGCTGAACTCCGCCACGAGCAGCAGGCCACCGTCGGCGAGATCCACTC[C/T]TCGGCCAACACAGCCACCCGCAATTCTGATGGTCGCAGTGCTGGCCGTGGCAACCAGGG
+
+- name: Durum wheat genome (cv. Svevo)
+  path: /opt/data/References/Tetraploid/160802_Svevo_v2_pseudomolecules.fasta
+  genome_count: 2
+  arm_selection: nrgene
+  description: >
+    An international consortium has generated a high quality reference sequence of the modern durum wheat cultivar Svevo.
+    Whole genome libraries were sequenced with Illumina short paired-end (2 x 250 bp) and long mate pair (up to 8-10 kb) 
+    protocols and the reads were assembly with the NR-Gene DeNovoMAGICTM pipeline. In total, a 270x coverage was obtained, 
+    and the reads were assembled into 10.5 Gb of sequence with an L50 and L90 length of 6 and 1 Mb, respectively (N50: 493; N90: 2019). 
+    The assembly scaffolds have been anchored to a high-density genetic map based on Svevo × Zavitan RIL population and merged 
+    into super-scaffolds using Hi-C data; 95% of the scaffolds have been anchored along the chromosomes and 90% oriented. 
+    Reference sequence available in [InterOmics](https://www.interomics.eu/durum-wheat-genome)
+  example: >
+    Kronos4607.chr2A.256748,2A,agaagcttattatgcatatgtggaattcatttattcggaaacaaaggtatgcgtgcaaaatcaagtgttttacggacggtactcgctgaaccctacatgc[C/T]tcgtgtcttgctgaaagagtatgataattcattcacagggtgctagctgatgggcatataccttgggcctgtgagggcttctcccggcttcatggaccgc
+    Kronos3485.chr3A.750506662,3A,gcttgtttcatgaaaatcatgtttactagagcttagtaattaatagtcttaacatgttaaatagccatcgatgacccaattactggtgtcagaggaccaa[G/A]atgccataatttcttacaaacaagttgtgatgcttcattagttaccactataccaactaagattccttaggagtttgaccatcaaactgtagttttacgg
+    Kronos3658.chr4A.82557,4A,gacggtgaacttgacctcgggcgcctcggcaacggtggcggcgtaggccttcttgacggcggactcgagggcagggacgaacttgtagcccgcgtatgcg[C/T]cgccagtggtctccttgatggccttgtcgaaggcggactcgaagacggtgaacttgtcgttgacgggggcagcgtcggcggcggtggcggcaatcctgaa
+    Kronos2065.chr6B.21130,6B,atatgctcaaacatgggtccggtatgctagcccaaagtaatatttttaagcaaatgctgacctcctattgcacgttccagttgctgggcaaacacggttc[C/T]atagtcgcgcttatcataccggaagtagggtgcagccgccttctttgagatcagcccagccagtatgcctacaaacccttccttcctttcctcaggagct
+
+- name: Triticum urartu (Tu2.0)
+  path: /opt/data/References/Tu/WheatTu.genome.fasta
+  genome_count: 1
+  arm_selection: scaffold
+  description: >
+    Triticum urartu (AA) is the diploid progenitor of tetraploid and hexaploid wheat. 
+    This assembly is based on T. urartu accession G1812 (PI428198). 
+    A previous draft assembly ( [Ling et al., 2013](https://doi.org/10.1038/nature11997) ), 
+    created using Illumina HiSeq2000 WGS short reads, was improved using BAC-by-BAC sequencing, 
+    SMRT sequencing, a BioNano genome map, and 10x Genomics linked reads into a chromosome level assembly 
+    of T. urartu ( [Ling et al., 2018](https://doi.org/10.1038/s41586-018-0108-0) ).
+    [MBKbase](http://www.mbkbase.org/Tu/).
+   
+  example: >
+    TuG1812G0300000075.01,Tu3,CTGTGACAACACTGGAGCTATTGCTCTTGCCAAGGAGCCCAGGTTTCACAAGAAGACAAGGCACATCAAGCGTCGCTTCAACTCCATTCGTG[A/G]AAATGTTCAAGATGGAGACATAGAGATTTGTAAAGTACATACGGACCTGAATGTAGGGGATCCGTTGACTAAACCTCTCCCTAGAGCAAAACATGAT
+    TuG1812G0100002019.01,Tu1,TCTTCTGGCTGCTCAGCAAGAACCGCGGCGTGGAGGCCAAGATCCTGGAGGAGGTCGAGGGCATCGTGGCGGCGCGGGCCCGCAGCGGGGAG[G/A]TGGAGGAGGAGCTGGTGTTCCAGCCGGAGGAGGTGAAGCGGATGGAGTACCTCCACGCCGCGCTCTCCGAGGCGCTCCGGCTCTACCCGTCCGTCCC
+    TuG1812G0700001094.01,Tu7,CTATTCTCTGGTCCTAGTGTTTCATTTCATACAAGGATGGCTTAGTGAACATGGTAAACAGCCGGGCCATGTGGCCAAGGGTTTGGTTGCCC[C/T]TGATAAAATGGTGTCATGGTGCGGTGCTTGCAGTTCTGGGCTCAACTCACCAGGAGACCGCTGGATATAATGTAGCCTCAGCTTTTCAATGGAAAAA
+    TuG1812G0500005315.01,Tu5,GCCGTACTTTCGCGAGAGATCTATGGCGTGGAGTTCAAGCTCTCCGAAGCTAGGATCTACGACGAGAAGCCTCTTACCTATCCCAGCATGAC[T/C]TCAACCAATGACACCAACGAACTACATGCCAAGACCCTGACCCTGAAATACGAGGAGACGCAGGCCAAGACCTGGAGCTCGACTGTTAGCCTCAAGA
+
+- name: Wheat cv Chinese Spring RefSeq v1.0
+  path: /opt/data/References/Ta/Triticum_aestivum.IWGSC.dna_rm.toplevel.fa
+  genome_count: 3
+  arm_selection: first_two
+  description: >
+    A whole genome assembly has been carried out by the IWGSC in collaboration with the company NRGene. 
+    Using a proprietary algorithm DeNovoMAGIC with Illumina sequencing data a 14.5 Gb assembly was produced. 
+    Sequences have been ordered using POPSEQ data and Hi-C (chromosome conformation capture) to generate 21 
+    pseudomolecules representing the majority of the wheat genome. Reference sequence available in URGI 
+    The assembly is described in [IWGSC (2018)](https://doi.org/10.1126/science.aar7191). Reference sequence 
+    available in [ensembl plants](https://plants.ensembl.org/Triticum_aestivum/Info/Index) 
+    ([reference file](ftp://ftp.ensemblgenomes.org/pub/plants/release-43/fasta/triticum_aestivum/dna/Triticum_aestivum.IWGSC.dna_rm.toplevel.fa.gz))
+    The repeats are masked to avoid multiple hits in repetitive regions. 
+  example: >
+    Cadenza1697.chr1A.12142209,1A,acaacttttcaaaaaataacacacccacaacctaaacacccttaaatatcaacttctgaggggaggcggcaactagtatcaaaaattcaaaatgtggttc[G/C]cacaactagcgttgccgagacaaaaagaaccagcacttccactgctccatgaattcaagaaacagaccgatggcatgtataagaacagacgtgccga
+    BA00591935,3B,gcacatcggagagttcgttggaagagcctagcaccgaggaattccaggaggaagatgtctctgatggagattcagactcgaacgacgagagcaaggggcc[G/A]gaagtaaagcttttcatcagcggagtagttcataataaagaggaggctggagcaaaatcttatgttcgagttcccgctgaaataaataacctggaaaggg
+    BA00343846,5A,ccacccctcctcttccccatgcagctacaactgaggcaatgctgccgtctgccttctggagttccccgccttcgatctcgagcacgccatccaggacggc[G/A]ttggtatcgaccgccaacctcaatctggatccggttgtggctaatgtacagactaattcccacacaaaacattcattaagttagcattgtctctttttgg
+    BA00122841,7D,ttcccaccacacgcttcagcagttccttggctcgcgatgaccccgactcatcatggcagaactgggtccggaggcccccatcaagacccttgtaaatgta[A/G]aagtacactgccagttgttcgctgccgctgttggtggcatggatgagaaggccaaaggggccaagcgcgccgcgttcagtggcaccaccacttgtactgc
+
+- name: Triticum aestivum (cv. Paragon)
+  path: /opt/data/References/Ta/Paragon_EIv1.1.fa
+  genome_count: 3
+  arm_selection: scaffold
+  description: >
+    The assembly is done with the pipeline described in  Clavijo, Venturini et al. 2017 10.1101/gr.217117.116 , filtering non-wheat sequences
+    and scaffolds below 1 kbp. The assembly is available in the [grassroots portal](https://opendata.earlham.ac.uk/wheat/under_license/toronto/Clavijo_2017-04-25_Wheat-LoLa/)
+    This assembly is part of a BBSRC strategic longer and larger (sLoLa) grant award between Earlham Institute (EI), John Innes Centre (JIC), European Bioinformatics Institute (EBI) and Rothamsted Research (RRes).
+    To find the scaffold where your markers are, you can blast the sequence [here](https://wheatis.tgac.ac.uk/grassroots-portal/blast).
+  example: >
+    BA00894563,Triticum_aestivum_Paragon_EIv1.1_scaffold_049530,TGGCAATCGTGCATCCGAAGCTCCGCGGCCCGGCACCATGCCTTCCTCTC[C/T]GTCTCGCTCGCCCGACGCTTGGAGCGTCTGCTCGTCGTCGGCTCTCACCA
+    BA00155703,Triticum_aestivum_Paragon_EIv1.1_scaffold_029723,TTGGAACTGTGCGAGGTCTCTTCATCTTTGGAAGCTCTGCTCTGTTTTTC[C/T]TTCTTTCTCTAGCATTTGATTCCTGCGTATTCATTCGTGTAATGCCGACA
+    BA00332629,Triticum_aestivum_Paragon_EIv1.1_scaffold_025636,CATGGTGACGGAGTTGAGGAGGCATTCTACACGACAGACAGGGTTATGAC[A/G]GTCTCATTCCACAAGTTTGGGGATTATTTCCCAGGTACAGGGGATGTCCG
+    BA00403950,Triticum_aestivum_Paragon_EIv1.1_scaffold_078673,AGCATTAGCCACAAAAGTGAAGCATCAGGATGTAAGTGAAATGCACTCTT[A/T]TAAACCCCCCAATGTATAAGCCATAAGGACGTGTGAGAAGAGCATGAAAG
+    BA00164837,Triticum_aestivum_Paragon_EIv1.1_scaffold_021431,TTCATCCCTGAAGTGGCGTGGCTAGACCTGCAGGGAGTGAGGAGACGTAT[C/T]GAGGGCTTGTTTCAGCGGTTGCATGCCATGATGGACGAACACATCGAGCT
+    BA00879177,Triticum_aestivum_Paragon_EIv1.1_scaffold_050412,ATCATGGAAGAAAAGCTACGGTTGGCACAGGAAGAGGCTGCCAGACTGAA[C/T]TTTGAGTCGGATGAGTTGGCAGCAGCCTCAAAAGAGAAAGAGAGAGGACT
+
+- name: Triticum aestivum (cv. Cadenza)
+  path: /opt/data/References/Ta/Cadenza_EIv1.1.fa
+  genome_count: 3
+  arm_selection: scaffold
+  description: >
+    The assembly is done with the pipeline described in  Clavijo, Venturini et al. 2017 10.1101/gr.217117.116 , filtering non-wheat sequences
+    and scaffolds below 1 kbp. The assembly is available in the [grassroots portal](https://opendata.earlham.ac.uk/wheat/under_license/toronto/Clavijo_2017-04-25_Wheat-LoLa/)
+    This assembly is part of a BBSRC strategic longer and larger (sLoLa) grant award between Earlham Institute (EI), John Innes Centre (JIC), European Bioinformatics Institute (EBI) and Rothamsted Research (RRes).
+    To find the scaffold where your markers are, you can blast the sequence [here](https://wheatis.tgac.ac.uk/grassroots-portal/blast).
+  example: >
+    BA00894563,Triticum_aestivum_Cadenza_EIv1.1_scaffold_063928,TGGCAATCGTGCATCCGAAGCTCCGCGGCCCGGCACCATGCCTTCCTCTC[C/T]GTCTCGCTCGCCCGACGCTTGGAGCGTCTGCTCGTCGTCGGCTCTCACCA
+    BA00155703,Triticum_aestivum_Cadenza_EIv1.1_scaffold_108851,TTGGAACTGTGCGAGGTCTCTTCATCTTTGGAAGCTCTGCTCTGTTTTTC[C/T]TTCTTTCTCTAGCATTTGATTCCTGCGTATTCATTCGTGTAATGCCGACA
+    BA00332629,Triticum_aestivum_Cadenza_EIv1.1_scaffold_011771,CATGGTGACGGAGTTGAGGAGGCATTCTACACGACAGACAGGGTTATGAC[A/G]GTCTCATTCCACAAGTTTGGGGATTATTTCCCAGGTACAGGGGATGTCCG
+    BA00403950,Triticum_aestivum_Cadenza_EIv1.1_scaffold_033066,AGCATTAGCCACAAAAGTGAAGCATCAGGATGTAAGTGAAATGCACTCTT[A/T]TAAACCCCCCAATGTATAAGCCATAAGGACGTGTGAGAAGAGCATGAAAG
+    BA00164837,Triticum_aestivum_Cadenza_EIv1.1_scaffold_065191,TTCATCCCTGAAGTGGCGTGGCTAGACCTGCAGGGAGTGAGGAGACGTAT[C/T]GAGGGCTTGTTTCAGCGGTTGCATGCCATGATGGACGAACACATCGAGCT
+    BA00879177,Triticum_aestivum_Cadenza_EIv1.1_scaffold_053694,ATCATGGAAGAAAAGCTACGGTTGGCACAGGAAGAGGCTGCCAGACTGAA[C/T]TTTGAGTCGGATGAGTTGGCAGCAGCCTCAAAAGAGAAAGAGAGAGGACT
+
+- name: Triticum aestivum (cv. Robigus)
+  path: /opt/data/References/Ta/Robigus_EIv1.1.fa
+  genome_count: 3
+  arm_selection: scaffold
+  description: >
+    The assembly is done with the pipeline described in  Clavijo, Venturini et al. 2017 10.1101/gr.217117.116 , filtering non-wheat sequences
+    and scaffolds below 1 kbp. The assembly is available in the [grassroots portal](https://opendata.earlham.ac.uk/wheat/under_license/toronto/Clavijo_2017-04-25_Wheat-LoLa/)
+    This assembly is part of a BBSRC strategic longer and larger (sLoLa) grant award between Earlham Institute (EI), John Innes Centre (JIC), European Bioinformatics Institute (EBI) and Rothamsted Research (RRes).
+    To find the scaffold where your markers are, you can blast the sequence [here](https://wheatis.tgac.ac.uk/grassroots-portal/blast).
+  example: >
+    BA00894563,Triticum_aestivum_Robigus_EIv1.1_scaffold_028049,TGGCAATCGTGCATCCGAAGCTCCGCGGCCCGGCACCATGCCTTCCTCTC[C/T]GTCTCGCTCGCCCGACGCTTGGAGCGTCTGCTCGTCGTCGGCTCTCACCA
+    BA00155703,Triticum_aestivum_Robigus_EIv1.1_scaffold_020518,TTGGAACTGTGCGAGGTCTCTTCATCTTTGGAAGCTCTGCTCTGTTTTTC[C/T]TTCTTTCTCTAGCATTTGATTCCTGCGTATTCATTCGTGTAATGCCGACA
+    BA00332629,Triticum_aestivum_Robigus_EIv1.1_scaffold_077867,CATGGTGACGGAGTTGAGGAGGCATTCTACACGACAGACAGGGTTATGAC[A/G]GTCTCATTCCACAAGTTTGGGGATTATTTCCCAGGTACAGGGGATGTCCG
+    BA00403950,Triticum_aestivum_Robigus_EIv1.1_scaffold_080179,AGCATTAGCCACAAAAGTGAAGCATCAGGATGTAAGTGAAATGCACTCTT[A/T]TAAACCCCCCAATGTATAAGCCATAAGGACGTGTGAGAAGAGCATGAAAG
+    BA00164837,Triticum_aestivum_Robigus_EIv1.1_scaffold_005774,TTCATCCCTGAAGTGGCGTGGCTAGACCTGCAGGGAGTGAGGAGACGTAT[C/T]GAGGGCTTGTTTCAGCGGTTGCATGCCATGATGGACGAACACATCGAGCT
+    BA00879177,Triticum_aestivum_Robigus_EIv1.1_scaffold_131378,ATCATGGAAGAAAAGCTACGGTTGGCACAGGAAGAGGCTGCCAGACTGAA[C/T]TTTGAGTCGGATGAGTTGGCAGCAGCCTCAAAAGAGAAAGAGAGAGGACT
+
+
+- name: Triticum aestivum (cv. Claire)
+  path: /opt/data/References/Ta/Claire_EIv1.1.fa
+  genome_count: 3
+  arm_selection: scaffold
+  description: >
+    The assembly is done with the pipeline described in  Clavijo, Venturini et al. 2017 10.1101/gr.217117.116 , filtering non-wheat sequences
+    and scaffolds below 1 kbp. The assembly is available in the [grassroots portal](https://opendata.earlham.ac.uk/wheat/under_license/toronto/Clavijo_2017-04-25_Wheat-LoLa/)
+    This assembly is part of a BBSRC strategic longer and larger (sLoLa) grant award between Earlham Institute (EI), John Innes Centre (JIC), European Bioinformatics Institute (EBI) and Rothamsted Research (RRes).
+    To find the scaffold where your markers are, you can blast the sequence [here](https://wheatis.tgac.ac.uk/grassroots-portal/blast).
+  example: >
+    BA00894563,Triticum_aestivum_Claire_EIv1.1_scaffold_014093,TGGCAATCGTGCATCCGAAGCTCCGCGGCCCGGCACCATGCCTTCCTCTC[C/T]GTCTCGCTCGCCCGACGCTTGGAGCGTCTGCTCGTCGTCGGCTCTCACCA
+    BA00155703,Triticum_aestivum_Claire_EIv1.1_scaffold_008634,TTGGAACTGTGCGAGGTCTCTTCATCTTTGGAAGCTCTGCTCTGTTTTTC[C/T]TTCTTTCTCTAGCATTTGATTCCTGCGTATTCATTCGTGTAATGCCGACA
+    BA00332629,Triticum_aestivum_Claire_EIv1.1_scaffold_024727,CATGGTGACGGAGTTGAGGAGGCATTCTACACGACAGACAGGGTTATGAC[A/G]GTCTCATTCCACAAGTTTGGGGATTATTTCCCAGGTACAGGGGATGTCCG
+    BA00403950,Triticum_aestivum_Claire_EIv1.1_scaffold_072729,AGCATTAGCCACAAAAGTGAAGCATCAGGATGTAAGTGAAATGCACTCTT[A/T]TAAACCCCCCAATGTATAAGCCATAAGGACGTGTGAGAAGAGCATGAAAG
+    BA00164837,Triticum_aestivum_Claire_EIv1.1_scaffold_123352,TTCATCCCTGAAGTGGCGTGGCTAGACCTGCAGGGAGTGAGGAGACGTAT[C/T]GAGGGCTTGTTTCAGCGGTTGCATGCCATGATGGACGAACACATCGAGCT
+    BA00879177,Triticum_aestivum_Claire_EIv1.1_scaffold_139136,ATCATGGAAGAAAAGCTACGGTTGGCACAGGAAGAGGCTGCCAGACTGAA[C/T]TTTGAGTCGGATGAGTTGGCAGCAGCCTCAAAAGAGAAAGAGAGAGGACT
+
+- name: Triticum turgidum (cv. Kronos)
+  path: /data/References/Td/Kronos_EIv1.1.fa
+  genome_count: 2
+  arm_selection: scaffold
+  description: >
+    The assembly is done with the pipeline described in  Clavijo, Venturini et al. 2017 10.1101/gr.217117.116 , filtering non-wheat sequences
+    and scaffolds below 1 kbp. The assembly is available in the [grassroots portal](https://opendata.earlham.ac.uk/wheat/under_license/toronto/Clavijo_2017-04-25_Wheat-LoLa/)
+    This assembly is part of a BBSRC strategic longer and larger (sLoLa) grant award between Earlham Institute (EI), John Innes Centre (JIC), European Bioinformatics Institute (EBI) and Rothamsted Research (RRes).
+    To find the scaffold where your markers are, you can blast the sequence [here](https://wheatis.tgac.ac.uk/grassroots-portal/blast).
+  example: >
+    BA00894563,Triticum_turgidum_Kronos_EIv1.1_scaffold_012363,TGGCAATCGTGCATCCGAAGCTCCGCGGCCCGGCACCATGCCTTCCTCTC[C/T]GTCTCGCTCGCCCGACGCTTGGAGCGTCTGCTCGTCGTCGGCTCTCACCA
+    BA00155703,Triticum_turgidum_Kronos_EIv1.1_scaffold_002852,TTGGAACTGTGCGAGGTCTCTTCATCTTTGGAAGCTCTGCTCTGTTTTTC[C/T]TTCTTTCTCTAGCATTTGATTCCTGCGTATTCATTCGTGTAATGCCGACA
+    BA00332629,Triticum_turgidum_Kronos_EIv1.1_scaffold_001597,CATGGTGACGGAGTTGAGGAGGCATTCTACACGACAGACAGGGTTATGAC[A/G]GTCTCATTCCACAAGTTTGGGGATTATTTCCCAGGTACAGGGGATGTCCG
+    BA00403950,Triticum_turgidum_Kronos_EIv1.1_scaffold_015021,AGCATTAGCCACAAAAGTGAAGCATCAGGATGTAAGTGAAATGCACTCTT[A/T]TAAACCCCCCAATGTATAAGCCATAAGGACGTGTGAGAAGAGCATGAAAG
+    BA00164837,Triticum_turgidum_Kronos_EIv1.1_scaffold_000020,TTCATCCCTGAAGTGGCGTGGCTAGACCTGCAGGGAGTGAGGAGACGTAT[C/T]GAGGGCTTGTTTCAGCGGTTGCATGCCATGATGGACGAACACATCGAGCT
+    BA00879177,Triticum_turgidum_Kronos_EIv1.1_scaffold_000889,ATCATGGAAGAAAAGCTACGGTTGGCACAGGAAGAGGCTGCCAGACTGAA[C/T]TTTGAGTCGGATGAGTTGGCAGCAGCCTCAAAAGAGAAAGAGAGAGGACT
+
+- name: Wheat cv Chinese Spring RefSeq v1.0 (Full sequence)
+  path: /data/References/RefSeq1.0/161010_Chinese_Spring_v1.0_pseudomolecules.fasta
+  genome_count: 3
+  arm_selection: nrgene
+  description: >
+    A whole genome assembly has been carried out by the IWGSC in collaboration with the company NRGene. 
+    Using a proprietary algorithm DeNovoMAGIC with Illumina sequencing data a 14.5 Gb assembly was produced. 
+    Sequences have been ordered using POPSEQ data and Hi-C (chromosome conformation capture) to generate 21 pseudomolecules 
+    representing the majority of the wheat genome.
+    Reference sequence available in [URGI](https://wheat-urgi.versailles.inra.fr/Seq-Repository/Annotations)
+    The assembly is described in [IWGSC (2018)](https://doi.org/10.1126/science.aar7191).
+  example: >
+    Cadenza1697.chr1A.12142209,1A,acaacttttcaaaaaataacacacccacaacctaaacacccttaaatatcaacttctgaggggaggcggcaactagtatcaaaaattcaaaatgtggttc[G/C]cacaactagcgttgccgagacaaaaagaaccagcacttccactgctccatgaattcaagaaacagaccgatggcatgtataagaacagacgtgccga
+    BA00591935,3B,gcacatcggagagttcgttggaagagcctagcaccgaggaattccaggaggaagatgtctctgatggagattcagactcgaacgacgagagcaaggggcc[G/A]gaagtaaagcttttcatcagcggagtagttcataataaagaggaggctggagcaaaatcttatgttcgagttcccgctgaaataaataacctggaaaggg
+    BA00343846,5A,ccacccctcctcttccccatgcagctacaactgaggcaatgctgccgtctgccttctggagttccccgccttcgatctcgagcacgccatccaggacggc[G/A]ttggtatcgaccgccaacctcaatctggatccggttgtggctaatgtacagactaattcccacacaaaacattcattaagttagcattgtctctttttgg
+    BA00122841,7D,ttcccaccacacgcttcagcagttccttggctcgcgatgaccccgactcatcatggcagaactgggtccggaggcccccatcaagacccttgtaaatgta[A/G]aagtacactgccagttgttcgctgccgctgttggtggcatggatgagaaggccaaaggggccaagcgcgccgcgttcagtggcaccaccacttgtactgc
+
