@@ -220,14 +220,19 @@ scp -r goz24vof@n119983:~/polymarker_data/public/files .
 ----------------------------
 
 
-[pm@pm bioruby-polymarker]$ bin/rails reference:add[/home/pm/pm_migration_test.yml]
+bin/rails reference:add[/home/pm/pm_migration_test.yml]
 
 
 
 ### and do prefecnces
 
 
-[pm@pm bioruby-polymarker]$ bin/rails setup:preferences[/home/pm/preferences.ini]
+bin/rails setup:preferences[/home/pm/preferences.ini]
+[polymarker@v1334 bioruby-polymarker]$ bin/rails setup:preferences[/home/polymarker/polymarker_data/preferences.ini]
+
+
+[polymarker@v1334 bioruby-polymarker]$ bin/rails reference:add[/home/polymarker/polymarker_data/all_references-20240620.yaml]
+
 
 
 ------------
@@ -409,3 +414,62 @@ sudo systemctl enable sidekiq
 
 
 @hourly /usr/sbin/service sidekiq restart
+
+
+
+
+
+
+
+# db bk and restore
+
+
+
+[root@v0894 data]# mongodump --db bioruby_polymarker_development --collection preferences --archive="polymarker_preferences_dump-20240620.gz" --gzip
+
+
+
+
+
+
+[root@v0894 data]# mongodump --db bioruby_polymarker_development --collection snp_files --archive="polymarker_snp_files_dump-20240620.gz" --gzip
+
+
+[root@v0894 data]# mongodump --db bioruby_polymarker_development --collection references --archive="polymarker_references_dump-20240620.gz" --gzip
+
+
+
+
+### sidekiq???
+
+[polymarker@v1334 ~]$ gem install sidekiq
+[polymarker@v1334 ~]$ cd bioruby-polymarker/
+[root@v1334 bioruby-polymarker]# cp examples/sidekiq.service /usr/lib/systemd/system/
+
+
+
+sudo systemctl start sidekiq
+sudo systemctl enable sidekiq
+
+
+
+
+##### files??
+
+
+[goz24vof@v1334 ~]$ cd /data/
+[goz24vof@v1334 data]$ ls
+References  sw
+[goz24vof@v1334 data]$ sudo mkdir tmp
+[goz24vof@v1334 data]$ sudo chown -R polymarker:users tmp/
+
+
+
+
+
+
+
+
+
+
+
